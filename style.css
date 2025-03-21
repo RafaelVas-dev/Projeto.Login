@@ -9,15 +9,10 @@
 }
 
 :root{
-    /*cores Login*/
-    --cor1: #0FC2C0;
-    --cor2: #0CABA8;
-    --cor3: #008F8C;
-
-    /*cores Cadrastro*/
-    --cor4: #815BD4;
-    --cor5: #6D4CB0;
-    --cor6: #573C8C;
+    /* Paleta de cores*/
+    --cor1: #9373d8;
+    --cor2: #8759e2;
+    --cor3: #4d2c8f;
 }
 
 body{
@@ -25,12 +20,17 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2), var(--cor3));
+}
+
+main{
+    background-color: #fff;
+    border-radius: 6px;
 }
 
 .card{
     width: 440px;
     padding: 40px 32px;
-    border-radius: 8px;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
 }
 
