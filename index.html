@@ -7,39 +7,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <!-- Link CSS -->
      <link rel="stylesheet" href="assets/css/sections/inicio.css">
-    <title>Login Cyberpunk</title>
+    <title>Login Futurista</title>
 </head>
 <body>
     <main>
     
         <!-- ==== Introdução ==== -->
-        <section class="introducao">
+        <section class="introducao" id="intro">
 
-            <video autoplay muted loop class="video-bg" id="introVideo">
+            <video autoplay muted loop playsinline preload="auto" class="video-bg" id="intro-video">
 
                 <source src="assets/midia/videos/iniciovd.mp4" type="video/mp4" />
 
             </video>
 
             <div class="intro-text">
-                <h1>Bem Vindo ao futuro!</h1>
-                <p>Clique em qualque lugar na tela para acessar o terminal</p>
+                <h1 id="titulo-intro">Bem Vindo ao futuro!</h1>
+                <p id="paragrafo-intro">Clique em qualque lugar na tela para acessar o terminal</p>
             </div>
 
         </section>
 
 
         <!-- ==== Login ===== -->
-        <section class="login">
+        <section class="login" id="login">
 
-            <video autoplay muted loop class="video-bg" id="introVideo">
+            <video autoplay muted loop class="video-bg" id="login-video">
 
                 <source src="assets/midia/videos/loginvd.mp4" type="video/mp4" />
 
             </video>
 
 
-         <div class="card">
+         <div class="card-login">
                 <h1>Faça seu Login</h1>
             <div class="social-login">
                 <button class="google">
@@ -81,5 +81,6 @@
     
     </main>
 
+    <script src="assets/js/intro.js"></script>
 </body>
 </html>

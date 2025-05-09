@@ -1,0 +1,99 @@
+/* ========== Animações ========== */
+
+
+/* Animaçaõ Do Titulo */
+@keyframes glitch-one {
+    0% {
+        left: 0;
+        top: 3px;
+    }
+    5% {
+        left: 2px;
+        top: -6px;
+    }
+    20%{
+        left: 4px;
+        top: -2px;
+    }
+    30% {
+        left: 6px;
+        top: 0;
+    }
+    40% {
+        left: -4px;
+        top: 4px;
+    }
+    50% {
+        left: 2px;
+        top: 2px;
+    }
+    60% {
+        left: 0px;
+        top: 0;
+    }
+    70% {
+        left: 0px;
+        top: 0;
+    }
+    80% {
+        left: 8px;
+        top: -1px;
+    }
+    90% {
+        left: -10px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 10px;
+    }
+}
+
+
+@keyframes glitch-two {
+    0% {
+        left: -0;
+        top: 3px;
+    }
+    5% {
+        left: -2px;
+        top: 6px;
+    }
+    20%{
+        left: -4px;
+        top: 2px;
+    }
+    30% {
+        left: -6px;
+        top: 0px;
+    }
+    40% {
+        left: 4px;
+        top: -4px;
+    }
+    50% {
+        left: -2px;
+        top: -2px;
+    }
+    60% {
+        left: 0px;
+        top: 0;
+    }
+    70% {
+        left: 0px;
+        top: 0;
+    }
+    80% {
+        left: -8px;
+        top: 1px;
+    }
+    90% {
+        left: 10px;
+        top: 0;
+    }
+    100% {
+        left: 0px;
+        top: -10px;
+    }
+}
+
