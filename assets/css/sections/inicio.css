@@ -25,6 +25,7 @@
     --neon-ciano: #00ffff;
     --neon-magen: #ff00ff;
     --color-alert: #fcee09;
+    --colorGlitch: #f04216;
     --agul-bg: #090c15;
 
 
@@ -32,6 +33,10 @@
     --font-titulo: "Orbitron", sans-serif ;
 }
 
+
+body{
+    overflow: hidden;
+}
 
 /* ==== Video ==== */
 .video-bg{
@@ -44,17 +49,17 @@
     z-index: -1;
 }
 
-
-.introducao{
-    
-}
-
 /* ========== Início ========== */
  .introducao, .login{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
+}
+
+.introducao{
+    opacity: 1;
+    visibility: visible;
     cursor: pointer;
 }
 
@@ -67,13 +72,32 @@
     z-index: 2;
 }
 
-/* Animação de entrada */
+.intro-text.zoom-out {
+    animation: sumirZoom 1s forwards ease-in-out;
+}
+
+.intro-text h1, .intro-text p{
+    opacity: 0;
+}
+
+#titulo-intro{
+    animation: introTitle 1s ease-out forwards;
+}
+
+#paragrafo-intro{
+    animation: introPara 1s ease-out 0.8s forwards;
+}
 
 .intro-text h1{
     font-family: var(--font-titulo);
     font-size: 3rem;
     position: relative;
 }
+
+.intro-text p{
+    font-size: 18px;
+}
+
 
 /* Efeito Glitch */
 .intro-text h1::before, .intro-text h1::after{
@@ -87,23 +111,26 @@
 
 .intro-text h1::before{
     color: var(--neon-ciano);
-    animation: glitch-one 2.5s infinite linear;
+    animation: glitch-one 3s infinite linear;
 }
 
 .intro-text h1::after{
-    color: var(--neon-magen);
-    animation: glitch-two 2.5s infinite linear;
+    color: var(--colorGlitch);
+    animation: glitch-two 3s infinite linear;
 }
 
-.intro-text p{
-    font-size: 18px;
-}
-   
 
 /* ========== Login ========== */
 
+#login.mostrar-login{
+    opacity: 1;
+    visibility: visible;
+    animation: aparecerFade 1s ease-out forwards;
+}
+
 .login{
-  display: none;  
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* =========== Card de Login ========== */
@@ -111,7 +138,7 @@
     margin: 2em auto;
     width: 25em;
     padding: 40px 32px;
-    box-shadow: 0px 7px 29px 0px #fcfcff;
+    box-shadow: 0 7px 29px 0 #fcfcff;
     backdrop-filter: blur(90px);
 }
 

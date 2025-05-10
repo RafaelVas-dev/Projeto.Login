@@ -1,7 +1,7 @@
 /* ========== Animações ========== */
 
 
-/* Animaçaõ Do Titulo */
+/* Animaçaõ Do Glitch */
 @keyframes glitch-one {
     0% {
         left: 0;
@@ -97,3 +97,58 @@
     }
 }
 
+
+/* Animação de entrada do Titulo */
+@keyframes introTitle {
+    0%{
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+        filter: brightness(50%) blur(2px);
+    }
+    60%{
+        filter: brightness(150%) blur(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: brightness(100%) blur(0);
+    }
+}
+
+
+
+/* Animação de entrada do Paragrafo */
+@keyframes introPara{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(2px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Animação da intro sumindo */
+@keyframes sumirZoom {
+    to {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+}
+
+/* Animação do login aparecendo */
+@keyframes aparecerFade {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+      border-radius: 1000px;
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+      
+    }
+}
