@@ -134,7 +134,7 @@
 /* Animação da intro sumindo */
 @keyframes sumirZoom {
     to {
-      transform: scale(1.5);
+      transform: scale(1.8);
       opacity: 0;
     }
 }
@@ -143,8 +143,8 @@
 @keyframes aparecerFade {
     from {
       opacity: 0;
-      transform: scale(0.5);
-      border-radius: 1000px;
+      transform: scale(0.3);
+      border-radius: 50%;
     }
     to {
       opacity: 1;

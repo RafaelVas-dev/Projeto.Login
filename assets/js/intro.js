@@ -37,3 +37,30 @@ document.addEventListener('click', () => {
       somIntro.play();
     }
 });
+
+// 2. Card de Login
+const form = document.querySelector('form');
+const inputEmail = form.querySelector('input[name="email"]');
+const inputSenha = form.querySelector('input[name="senha"]');
+const botaoLogin = form.querySelector('.btn-login');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  if (checkInputs()) {
+      alert('Login feito com sucesso!');
+  }
+
+});
+
+inputEmail.addEventListener('input', () => {
+  validateField(inputEmail, inputEmail.value.trim() !== '', 'Email inválido');
+});
+
+inputSenha.addEventListener('input', () => {
+  validateField(inputSenha, inputSenha.value.trim() !== '', 'Senha invalida');
+})
+
+function validateField(input, condition, errorMenssage){
+  
+}
