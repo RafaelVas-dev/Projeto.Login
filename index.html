@@ -39,7 +39,7 @@
         <!-- ==== Login ===== -->
         <section class="login" id="login">
 
-            <video autoplay muted loop class="video-bg" id="login-video">
+            <video preload="none" autoplay muted loop class="video-bg" id="login-video">
 
                 <source src="assets/midia/videos/loginvd.mp4" type="video/mp4" />
 
@@ -67,12 +67,12 @@
             <form>
                 <label for="email">Email:</label>
                 <div class="inputs">
-                    <input type="email" name="email" placeholder="Digite Seu Email" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Digite Seu Email" autocomplete="off" >
                     <i class="bi bi-at"></i>
                 </div>
                 <label for="senha">Senha:</label>
                 <div class="inputs">
-                    <input type="password" name="senha" placeholder="Digite sua Senha" required>
+                    <input type="password" name="senha" placeholder="Digite sua Senha" >
                     <i class="bi bi-eye"></i>
                     <i class="bi bi-eye-slash"></i>
                 </div>
@@ -88,6 +88,6 @@
     
     </main>
 
-    <script src="assets/js/intro.js"></script>
+    <script src="assets/js/intro.js" defer></script>
 </body>
 </html>

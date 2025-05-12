@@ -239,9 +239,9 @@ form label{
 }
 
 .inputs .bi.bi-eye-slash{
+    cursor: pointer;
     display: none;
 }
-
 
 .inputs i{
     position: absolute;
@@ -252,6 +252,8 @@ form label{
     color: var(--txt-prin);
 }
 
+
+/* Botão */
 .card-login form .btn-login {
     width: 100%;
     line-height: 50px;
